@@ -2,6 +2,7 @@ import "./add_offer.css"
 import React, { useState } from "react";
 import { useParams, useNavigate } from "react-router-dom";
 import axios from "axios";
+import { showSuccessToast } from "./toasts";
 
 const CREATE_OFFER = "http://127.0.0.1:8000/api/discounts/create/";
 
@@ -20,7 +21,7 @@ const AddOffer = () => {
                 quantity: quantity,
                 discount_price: discountPrice
             });
-            alert("Offer added successfully!");
+            showSuccessToast("Offer added successfully!");
             navigate("/");
         } catch (error) {
             console.error("Error adding offer:", error);
