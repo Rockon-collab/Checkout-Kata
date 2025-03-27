@@ -1,0 +1,2 @@
+# Checkout-Kata
+Calculate pricing
