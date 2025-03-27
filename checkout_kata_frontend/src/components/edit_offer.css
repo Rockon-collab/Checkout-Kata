@@ -1,0 +1,55 @@
+/* Container */
+.edit-offer-container {
+    width: 50%;
+    margin: auto;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Input Fields */
+input {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    outline: none;
+}
+
+/* Button Container */
+.button-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 10px;
+}
+
+/* Common Button Styles */
+.update-button, .delete-button {
+    color: white;
+    padding: 10px;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    width: 48%;
+    transition: background-color 0.3s ease-in-out;
+}
+
+/* Update Button */
+.update-button {
+    background-color: #28a745;
+}
+
+.update-button:hover {
+    background-color: #218838;
+}
+
+/* Delete Button */
+.delete-button {
+    background-color: #dc3545;
+}
+
+.delete-button:hover {
+    background-color: #c82333;
+}
